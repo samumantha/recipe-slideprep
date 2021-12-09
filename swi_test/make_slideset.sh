@@ -20,7 +20,7 @@ while IFS= read -r line || [ -n "$line" ]; do
         #printf '%s\n' "$line"| sed 's/^.\{,6\}//'  >> filelist.txt
         printf '%s\n' "$line" >> filelist.txt
    fi
-done < $slidelist
+done < slidelist.md
 
 
 # create one md from all slides mds with metadata
