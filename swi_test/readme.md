@@ -21,3 +21,10 @@ OR
 #TODO: include make_vertical, they could be indicated by indentation in slidelist.md, leave out when creating slides from dir
 
 
+---
+
+ Making html slides:
+ 
+ * build sif from def in parent (this did not work lately) OR `wget https://a3s.fi/general/slidefactory.simg`
+ * put full slide md in parent and run ` singularity -s exec -B $PWD:$PWD  slidefactory.simg  python convert.py testslides.md `
+-> creates testslides.html
